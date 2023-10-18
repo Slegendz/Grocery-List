@@ -1,0 +1,34 @@
+Notes
+
+first of all remove all the dependencies we aren't using
+
+initialize the repository to the git and add the files in the git
+commit the git files
+create new repo to the git
+
+just add the repo to the netlify and it will be ready
+
+--------------------------------------------------------------
+
+to host the page on the github unistall the dependencies 
+and add dev dependencies to host on the github
+
+npm i gh-pages -D       install it
+
+
+in package.json underneath the version add 
+
+"homepage": "htttps:// <add_user_name> .github.io/ <repo_name>",
+"private": true,
+
+
+add scripts to the package.json also
+
+"predeploy" : "npm run build",
+"deploy" : "gh-pages -d build",
+
+after it initialize the github repo and add file in it after pushing the file
+
+npm run deploy        (this will deploy the file in the github)
+
+
